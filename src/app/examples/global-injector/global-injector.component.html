@@ -1,0 +1,43 @@
+<div class="examples">
+    <h2>
+        Global Injector
+    </h2>
+    <br />
+    <div class="card bg-light">
+        <div class="card-body">
+            {{ description }}
+        </div>
+    </div>
+    <br />
+    <h3><em>example</em></h3>
+    <pre>
+        <code [highlight]="classCode"></code>
+    </pre>
+    <h5>
+        <span class="badge badge-secondary"
+            >Current Time Formatted Without Date Pipe:</span
+        >
+        {{ currentTimeFormattedWithoutDatePipe }}
+        <br />
+        <span class="badge badge-secondary"
+            >Current Time Formatted Using Date Pipe:</span
+        >
+        {{ currentTimeFormattedUsingDatePipe }}
+    </h5>
+    <br />
+    <h3><em>solution</em></h3>
+    <h5>Step 1 - setup the global injector with these two files</h5>
+    <em>global-injector.ts [added]</em>
+    <pre>
+        <code [highlight]="globalInjector"></code>
+    </pre>
+    <em>app.module.ts [modified]</em>
+    <pre>
+        <code [highlight]="appModule"></code>
+    </pre>
+
+    <h5>Step 2 - then use it like this</h5>
+    <pre>
+        <code [highlight]="classCodeWithInjector"></code>
+    </pre>
+</div>
